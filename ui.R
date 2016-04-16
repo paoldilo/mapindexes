@@ -14,11 +14,11 @@ shinyUI(fluidPage(
      ),
      mainPanel(
           h3("Stock indexes world map"),
-          helpText("This application retrieves the stock markets indexes of 15 majow world indices, computes the percentage difference with the previous day 
+          helpText("Documentation: This application retrieves the stock markets indexes of 15 majow world indices, computes the percentage difference with the previous day 
                    and display the increase (in green) or decrease (in red) of the index."),
           helpText("To use the application you can either select the date with the slider 
            to get a specific date or press the play button on the right lower corner of the slider to start
-           the anomation day by day. Enjoy"),
+           the anomation day by day. In case you select a non-working date, all countries will be marked in white being the stock markets closed. The GoogleVis plot takes a few seconds to display, please be patient. Enjoy"),
           verbatimTextOutput("date_O"),
           htmlOutput("distPlot")
           
